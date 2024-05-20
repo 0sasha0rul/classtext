@@ -1,6 +1,0 @@
-C:/Users/user/Desktop/University/bysko/classtext/build/CMakeFiles/main_text_lib_test_file.dir
-C:/Users/user/Desktop/University/bysko/classtext/build/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/University/bysko/classtext/build/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Desktop/University/bysko/classtext/build/Text_lib/CMakeFiles/text_lib.dir
-C:/Users/user/Desktop/University/bysko/classtext/build/Text_lib/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/University/bysko/classtext/build/Text_lib/CMakeFiles/rebuild_cache.dir
