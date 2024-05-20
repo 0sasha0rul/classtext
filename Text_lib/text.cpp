@@ -139,11 +139,39 @@ char& Text::at(std::size_t i) {
 }
 
 void Text::push_back(const char c) {
-	// TODO
+	std::cout << "www";
+	value = new char[this->size + 2];
+	for (int i = 0; i < this->size; i++)
+	{
+		value[i] = this->value[i];
+	}
+	delete[] this->value;
+	value[this->size] = c;
+	value[this->size + 1] = '\0';
+	size = this->size + 1;
+
 }
 
 void Text::push_back(const char* const str) {
-	// TODO
+	
+	char new_value [this->size + strlen(str) + 1];
+
+	for (int i = 0; i < this->size ; i++)
+		{	
+			new_value[i] = this->value[i];
+		}
+
+	int n = 0;
+	for (int i = this->size; i < this->size + strlen(str) ; i++)
+		{
+			new_value[i] = str[n];
+			n += 1;
+		}
+
+	size = this->size + strlen(str) + 1;
+	new_value[size - 1] = '\0';
+	value = new_value;
+	
 }
 
 void Text::remove_all(const char c) {

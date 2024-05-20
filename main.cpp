@@ -7,8 +7,28 @@ int main(){
 
     IBusko::Text a = "123";
     IBusko::Text b = "123";
-    
-    cout << a.at(2);
+    IBusko::Text c = "Hello";
+    IBusko::Text d = "World";
+    IBusko::Text e = "World";
+
+    a = e;
+    cout << a << endl;
+
+    if (d == e){
+        cout << "Equals" << endl;
+    }
+
+    if (a != c){
+        cout << "Not egual"<< endl;
+    }
+
+    cout << c + d << endl;
+
+    cout << a.at(2) << endl;
+
+    c.push_back("World");
+    cout << c << endl;
+
 
     // чтобы окошко exe-шника не закрывалось автоматически
     cout << endl;

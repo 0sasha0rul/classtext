@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libtext_lib.a CMakeFiles/text_lib.dir/text.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libtext_lib.a
