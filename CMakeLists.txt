@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.26)
-project(text_Lib_test)
 
-set(CMAKE_CXX_STANDARD 23)
+project(main)
 
-add_executable(main_text_lib_test_file main.cpp)
+set(LIB_NAME text_lib)
+set(EXE_NAME text_main)
 
-include_directories(Text_lib)
-add_subdirectory(Text_lib)
-message("Hello world from cmake")
-target_link_libraries(main_text_lib_test_file text_lib)
+add_library(${LIB_NAME} "")
+add_executable(${EXE_NAME} main.cpp)
+
+add_subdirectory(text)
+
+target_link_libraries(${EXE_NAME} ${LIB_NAME})

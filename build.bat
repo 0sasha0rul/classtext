@@ -4,8 +4,8 @@ del log
 
 :: "Visual Studio 17 2022" / Ninja
 
-set BUILD_TYPE=Ninja
-set BUILD_FOLDER=build_ninja
+set BUILD_TYPE="Visual Studio 17 2022"
+set BUILD_FOLDER=build_vs
 set SOURCE_FOLDER=.
 
 if not exist %BUILD_FOLDER% mkdir %BUILD_FOLDER%

@@ -95,7 +95,7 @@ bool Text::operator != (const Text& x) const {
 	} else {
 		equals = false;
 	}
-	return not equals;
+	return !equals;
 }
 
 Text Text::operator + (const Text& x) const {
@@ -127,10 +127,13 @@ char& Text::at(std::size_t i) {
 
 void Text::push_back(const char c) {
 	// TODO
+	std::cout << "push_back(const char c)" << std::endl;
 }
 
 void Text::push_back(const char* const str) {
-	char new_value [size + strlen(str) + 1];
+	std::cout << "push_back(const char* const str)" << std::endl;
+	
+	char* new_value = new char[size + strlen(str) + 1];
 
 	for (int i = 0; i < size ; i++) {	
 		new_value[i] = value[i];
@@ -145,6 +148,8 @@ void Text::push_back(const char* const str) {
 	size = size + strlen(str) + 1;
 	new_value[size - 1] = '\0';
 	value = new_value;
+	
+	delete new_value;
 }
 
 void Text::remove_all(const char c) {
