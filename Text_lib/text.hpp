@@ -3,7 +3,7 @@
 #include <cstddef>
 #include <iostream>
 
-namespace IBusko {
+namespace ARylova {
 	class Text final {
 		private:
 			static const char END = '\0';

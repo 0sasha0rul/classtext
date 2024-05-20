@@ -1,39 +1,33 @@
 #include <iostream>
+
 #include "text.hpp"
-using namespace std;
 
 int main(){
-    cout << "starting to test IBusko::Text by ARylova!" << endl;
+    std::cout << "starting to test ARylova::Text by ARylova!" << std::endl;
 
-    IBusko::Text a = "123";
-    IBusko::Text b = "123";
-    IBusko::Text c = "Hello";
-    IBusko::Text d = "World";
-    IBusko::Text e = "World";
+    ARylova::Text a = "123";
+    ARylova::Text b = "123";
+    ARylova::Text c = "Hello";
+    ARylova::Text d = "World";
+    ARylova::Text e = "World";
 
     a = e;
-    cout << a << endl;
+    std::cout << a << std::endl;
 
-    if (d == e){
-        cout << "Equals" << endl;
+    if (d == e) {
+        std::cout << "Equals" << std::endl;
     }
 
-    if (a != c){
-        cout << "Not egual"<< endl;
+    if (a != c) {
+        std::cout << "Not egual"<< std::endl;
     }
 
-    cout << c + d << endl;
+    std::cout << c + d << std::endl;
 
-    cout << a.at(2) << endl;
+    std::cout << a.at(2) << std::endl;
 
     c.push_back("World");
-    cout << c << endl;
+    std::cout << c << std::endl;
 
-
-    // чтобы окошко exe-шника не закрывалось автоматически
-    cout << endl;
-    cout << "ending to test IBusko::Text by ARylova!" << endl;
-    int n;
-    cin >> n;
     return 0;
 }
